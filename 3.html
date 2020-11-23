@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số cần tính giai thừa")
+    function calculateFactorial(a) {
+        for (i=1; a>=1; a--) {
+            i = i*a;
+        }
+        return i;
+    }
+    alert("Giai thừa của "+a+" là "+calculateFactorial(a))
+</script>
+</body>
+</html>

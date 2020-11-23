@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let p = Math.PI;
+    let r = +prompt('Nhập bán kính');
+    function calculateArea(r) {
+        let a = p*r**2;
+        return a;
+    }
+    function calculatePerimeter(r) {
+        let b = 2*r*p;
+        return b;
+    }
+    alert('Diện tích hình tròn là : ' + calculateArea(r));
+    alert('Chu vi hình tròn là : ' + calculatePerimeter(r));
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let a = +prompt("Nhập độ dài mảng:");
+    for (let i = 0; i < a; i++) {
+        arr[i] = +prompt("Nhập kí tự bất kì để lưu vào phần tử " + i + " của mảng:");
+    }
+    let b = prompt("Nhập kí tự");
+    function searchArr(b) {
+        let count = 0;
+        for (i = 0; i < a; i++) {
+            if (arr[i] == b) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return  -1;
+        }
+    }
+    alert(searchArr(b));
+</script>
+</body>
+</html>
